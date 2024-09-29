@@ -24,20 +24,35 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-table {
-    width: 100%;
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+table.custom-table {
+    width: 750px;
+    border: 5px solid black;
     border-collapse: collapse;
     margin-top: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+table.custom-table th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
-    text-align: left;
+table.custom-table th {
+    background-color: #f2f2f2; /* заштриховані комірки */
 }
 
 footer {
