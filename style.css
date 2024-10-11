@@ -1,59 +1,66 @@
-/* Загальні налаштування */
+/* Загальні стилі */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Важливо для правильних розмірів */
+    box-sizing: border-box;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Сторінка Завдання 1 */
 /* Header */
 .header {
     background-color: #a0ff8a;
     height: 150px;
-    width: 100%; /* Повна ширина */
     text-align: center;
-    line-height: 150px; /* Центрування тексту вертикально */
+    line-height: 150px;
 }
 
 /* Main fold */
 .fold {
     background-color: #ffc79e;
     height: 550px;
-    width: 100%;
     text-align: center;
-    line-height: 550px; /* Центрування тексту вертикально */
+    line-height: 550px;
 }
 
 /* Photo section */
 .photo-section {
     background-color: #ff99a0;
-    display: flex;
-    justify-content: space-around;
     padding: 20px;
+    text-align: center;
 }
 
 .photo {
+    display: inline-block;
     width: 360px;
     height: 350px;
     background-color: #999;
     text-align: center;
     line-height: 350px;
+    margin: 10px;
 }
 
 /* Slider section */
 .slider-section {
     background-color: #999;
-    display: flex;
-    justify-content: space-around;
     padding: 20px;
+    text-align: center;
 }
 
 .slide {
+    display: inline-block;
     width: 360px;
     height: 350px;
     background-color: #ccc;
     text-align: center;
     line-height: 350px;
+    margin: 10px;
 }
 
 /* Text sections */
@@ -61,12 +68,135 @@ body {
     background-color: #ffc79e;
     text-align: center;
     padding: 50px 0;
+    margin: 10px 0;
+}
+
+.small-text {
+    background-color: #ff99a0;
+    padding: 30px 0;
+}
+
+.large-text {
+    padding: 70px 0;
+}
+
+/* Pink section */
+.pink-section {
+    background-color: #ff99a0;
+    margin-top: 10px;
+}
+
+.small-pink {
+    height: 50px;
 }
 
 /* Footer */
 .footer {
     background-color: #00a000;
+    height: 250px;
+    text-align: center;
+    line-height: 140px;
+    margin-top: 10px;
+}
+
+/* Кнопка для Завдання 2 */
+.task-button {
+    display: inline-block;
+    background-color: #00a000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* Сторінка Завдання 2 */
+/* Header для Завдання 2 */
+.header-task2 {
+    background-color: #ccc;
     height: 100px;
     text-align: center;
     line-height: 100px;
+    margin-bottom: 10px;
+}
+
+/* Основний контент */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.left-sidebar, .right-sidebar {
+    background-color: #aaa;
+    width: 220px;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+.main-content-center {
+    background-color: #fff;
+    width: 450px;
+    height: 295px;
+    text-align: center;
+    line-height: 300px;
+    border: 2px solid black; /* Чорна рамка навколо основного контенту */
+}
+
+/* Додаємо стилі для зображень у сайдбарах і основному контенті */
+.sidebar-image, .main-content-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Footer для Завдання 2 */
+.footer-task2 {
+    background-color: #ccc;
+    height: auto; /* Змінюємо на auto, щоб футер підлаштовувався під контент */
+    text-align: left; /* Вирівнюємо текст по лівому краю */
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.footer-task2 h2, .footer-task2 h3 {
+    text-align: center;
+    color: #333;
+}
+
+.footer-task2 p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-task2 ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+.footer-task2 li {
+    margin-bottom: 10px;
+}
+
+.footer-task2 li b {
+    color: #000;
+}
+
+/* Контейнер для кнопки під футером */
+.task-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Кнопка для Завдання 1 */
+.task-button {
+    display: inline-block;
+    background-color: #00a000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
