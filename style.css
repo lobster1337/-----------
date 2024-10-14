@@ -1,202 +1,164 @@
-/* Загальні стилі */
-body {
-    font-family: Arial, sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #001f3f; 
+    padding: 20px 0;
+}
+
 .container {
-    max-width: 1200px;
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
-}
-
-/* Сторінка Завдання 1 */
-/* Header */
-.header {
-    background-color: #a0ff8a;
-    height: 150px;
-    text-align: center;
-    line-height: 150px;
-}
-
-/* Main fold */
-.fold {
-    background-color: #ffc79e;
-    height: 550px;
-    text-align: center;
-    line-height: 550px;
-}
-
-/* Photo section */
-.photo-section {
-    background-color: #ff99a0;
-    padding: 20px;
-    text-align: center;
-}
-
-.photo {
-    display: inline-block;
-    width: 360px;
-    height: 350px;
-    background-color: #999;
-    text-align: center;
-    line-height: 350px;
-    margin: 10px;
-}
-
-/* Slider section */
-.slider-section {
-    background-color: #999;
-    padding: 20px;
-    text-align: center;
-}
-
-.slide {
-    display: inline-block;
-    width: 360px;
-    height: 350px;
-    background-color: #ccc;
-    text-align: center;
-    line-height: 350px;
-    margin: 10px;
-}
-
-/* Text sections */
-.text-section {
-    background-color: #ffc79e;
-    text-align: center;
-    padding: 50px 0;
-    margin: 10px 0;
-}
-
-.small-text {
-    background-color: #ff99a0;
-    padding: 30px 0;
-}
-
-.large-text {
-    padding: 70px 0;
-}
-
-/* Pink section */
-.pink-section {
-    background-color: #ff99a0;
-    margin-top: 10px;
-}
-
-.small-pink {
-    height: 50px;
-}
-
-/* Footer */
-.footer {
-    background-color: #00a000;
-    height: 250px;
-    text-align: center;
-    line-height: 140px;
-    margin-top: 10px;
-}
-
-/* Кнопка для Завдання 2 */
-.task-button {
-    display: inline-block;
-    background-color: #00a000;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-top: 50px;
-}
-
-/* Сторінка Завдання 2 */
-/* Header для Завдання 2 */
-.header-task2 {
-    background-color: #ccc;
-    height: 100px;
-    text-align: center;
-    line-height: 100px;
-    margin-bottom: 10px;
-}
-
-/* Основний контент */
-.main-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    align-items: center;
 }
 
-.left-sidebar, .right-sidebar {
-    background-color: #aaa;
-    width: 220px;
-    height: 300px;
-    text-align: center;
-    line-height: 300px;
+.logo img {
+    max-width: 150px; 
 }
 
-.main-content-center {
-    background-color: #fff;
-    width: 450px;
-    height: 295px;
-    text-align: center;
-    line-height: 300px;
-    border: 2px solid black; /* Чорна рамка навколо основного контенту */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
 
-/* Додаємо стилі для зображень у сайдбарах і основному контенті */
-.sidebar-image, .main-content-image {
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
-    margin: 0 auto;
-    object-fit: cover;
+nav ul li {
+    display: inline;
 }
 
-/* Footer для Завдання 2 */
-.footer-task2 {
-    background-color: #ccc;
-    height: auto; /* Змінюємо на auto, щоб футер підлаштовувався під контент */
-    text-align: left; /* Вирівнюємо текст по лівому краю */
-    padding: 20px;
-    line-height: 1.6;
-}
-
-.footer-task2 h2, .footer-task2 h3 {
-    text-align: center;
-    color: #333;
-}
-
-.footer-task2 p {
+nav ul li a {
+    text-decoration: none;
+    color: white;
     font-size: 16px;
-    margin-bottom: 20px;
+    transition: color 0.3s ease;
 }
 
-.footer-task2 ul {
-    list-style-type: disc;
-    margin-left: 40px;
+nav ul li a:hover {
+    color: #00d8ff; 
 }
 
-.footer-task2 li {
-    margin-bottom: 10px;
-}
-
-.footer-task2 li b {
-    color: #000;
-}
-
-/* Контейнер для кнопки під футером */
-.task-button-container {
+footer {
+    margin-top: auto; 
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: transparent; 
 }
 
-/* Кнопка для Завдання 1 */
+.button-container {
+    display: flex;
+    justify-content: center; 
+}
+
 .task-button {
     display: inline-block;
-    background-color: #00a000;
+    padding: 10px 20px;
+    background-color: #00d8ff;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.task-button:hover {
+    background-color: #0077b6; 
+}
+
+/* Стилі для меню task2 */
+.task2-menu {
+    background-color: #3399FF;
+    padding: 10px 0;
+    border: 2px solid blue;
+    text-align: center;
+}
+
+.task2-menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.task2-menu-list li {
+    margin: 0 20px;
+}
+
+.task2-menu-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    background-color: #3399FF;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.task2-menu-list li a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid blue;
+}
+
+
+.task2-menu-list li:nth-child(3) a {
+    background-color: white;
+    color: black;
+    border: 1px solid blue;
+}
+
+/* Стилі для додаткового меню */
+.additional-menu {
+    background-color: #3399FF;
+    padding: 10px 0;
+    border: 2px solid blue;
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.additional-menu-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.additional-menu-list li {
+    margin: 0 20px;
+}
+
+.additional-menu-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+    background-color: #3399FF;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.additional-menu-list li a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid blue;
+}
+
+
+.additional-menu-list li:nth-child(2) a {
+    background-color: white;
+    color: black;
+    border: 1px solid blue;
 }
